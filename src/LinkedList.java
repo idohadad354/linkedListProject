@@ -4,17 +4,17 @@ public class LinkedList {
 
   public void insert(int data) {
     Node node = new Node();
-    node.data = data;
+    node.setData(data);
 
     if (this.head == null) {
       head = node;
     } else {
       Node currentNode = this.head;
 
-      while (currentNode.next != null) {
-        currentNode = currentNode.next;
+      while (currentNode.getNext() != null) {
+        currentNode = currentNode.getNext();
       }
-      currentNode.next = node;
+      currentNode.setNext(node);
     }
   }
 
@@ -25,12 +25,12 @@ public class LinkedList {
     } else {
       Node currentNode = this.head;
 
-      while (currentNode.next != null) {
-        System.out.print(currentNode.data);
+      while (currentNode.getNext() != null) {
+        System.out.print(currentNode.getData());
         System.out.print("-->");
-        currentNode = currentNode.next;
+        currentNode = currentNode.getNext();
       }
-      System.out.print(currentNode.data);
+      System.out.print(currentNode.getData());
     }
     System.out.println();
   }
