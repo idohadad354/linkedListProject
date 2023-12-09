@@ -13,7 +13,7 @@ public class Main {
 
 	linkedList.show();
 
-    System.out.println("hello");
+    System.out.println("ido");
 
     System.out.println("hi");
   }
