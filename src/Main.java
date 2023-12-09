@@ -11,7 +11,7 @@ public class Main {
 
     linkedList.deleteList();
 
-		linkedList.show();
+	linkedList.show();
 
     System.out.println("hello");
 
