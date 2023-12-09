@@ -1,15 +1,15 @@
-public class LinkedList {
+public class LinkedList<T> {
 
-  Node head;
+  Node<T> head;
 
-  public void insert(int data) {
-    Node node = new Node();
+  public void insert(T data) {
+    Node<T> node = new Node<T>();
     node.setData(data);
 
     if (this.head == null) {
       head = node;
     } else {
-      Node currentNode = this.head;
+      Node<T> currentNode = this.head;
 
       while (currentNode.getNext() != null) {
         currentNode = currentNode.getNext();
@@ -23,7 +23,7 @@ public class LinkedList {
     if (this.head == null) {
       System.out.println("null");
     } else {
-      Node currentNode = this.head;
+      Node<T> currentNode = this.head;
 
       while (currentNode.getNext() != null) {
         System.out.print(currentNode.getData());
@@ -40,9 +40,9 @@ public class LinkedList {
   }
 
   public void reverseList() {
-    Node nextNode = this.head;
-    Node currentNode = this.head;
-    Node prevNode = null;
+    Node<T> nextNode = this.head;
+    Node<T> currentNode = this.head;
+    Node<T> prevNode = null;
 
     if (currentNode != null) {
       while (currentNode.getNext() != null) {
