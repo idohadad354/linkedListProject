@@ -5,12 +5,15 @@ public class Main {
 
     linkedList.insert(23);
     linkedList.insert(34);
-    linkedList.insert(12);
+    linkedList.insert(65);
+    linkedList.insert(645);
+    linkedList.insert(3456);
 
     linkedList.show();
 
-    linkedList.deleteList();
+    linkedList.reverseList();
 
-	linkedList.show();
+    linkedList.show();
+
   }
 }

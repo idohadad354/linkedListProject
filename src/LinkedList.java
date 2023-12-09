@@ -38,4 +38,21 @@ public class LinkedList {
   public void deleteList() {
     this.head = null;
   }
+
+  public void reverseList() {
+    Node nextNode = this.head;
+    Node currentNode = this.head;
+    Node prevNode = null;
+
+    if (currentNode != null) {
+      while (currentNode.getNext() != null) {
+        nextNode = currentNode.getNext();
+        currentNode.setNext(prevNode);
+        prevNode = currentNode;
+        currentNode = nextNode;
+      }
+      currentNode.setNext(prevNode);
+      this.head = currentNode;
+    }
+    }
 }
