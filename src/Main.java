@@ -8,5 +8,9 @@ public class Main {
 		linkedList.insert(12);
 
 		linkedList.show();
+
+		linkedList.deleteList();
+
+		linkedList.show();
 	}
 }
