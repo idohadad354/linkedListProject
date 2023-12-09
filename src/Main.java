@@ -12,9 +12,5 @@ public class Main {
     linkedList.deleteList();
 
 	linkedList.show();
-
-    System.out.println("ido");
-
-    System.out.println("hi");
   }
 }
