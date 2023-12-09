@@ -34,4 +34,8 @@ public class LinkedList {
     }
     System.out.println();
   }
+
+  public void deleteList() {
+    this.head = null;
+  }
 }
