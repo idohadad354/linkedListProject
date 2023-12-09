@@ -54,5 +54,5 @@ public class LinkedList {
       currentNode.setNext(prevNode);
       this.head = currentNode;
     }
-    }
+  }
 }

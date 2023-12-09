@@ -14,6 +14,5 @@ public class Main {
     linkedList.reverseList();
 
     linkedList.show();
-
   }
 }
