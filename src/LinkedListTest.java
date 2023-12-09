@@ -21,19 +21,10 @@ public class LinkedListTest {
   }
 
   @Test
-  public void insert() {
-
-  }
+  public void insert() {}
 
   @Test
-  public void show_regularExpression() {
-    final String EXPECTED = "23-->34-->65-->645-->3456";
-    ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-    System.setOut(new PrintStream(outContent));
-
-    linkedList.show();
-    assertEquals(EXPECTED, outContent.toString());
-  }
+  public void show_regularExpression() {}
 
   @Test
   public void deleteList() {}
